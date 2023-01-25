@@ -24,9 +24,9 @@ public class ItemPedido {
 	private Produto produto;
 	
 	public ItemPedido(int quantidade, Pedido pedido, Produto produto) {
-		super();
 		this.quantidade = quantidade;
 		this.pedido = pedido;
+		this.precoUnitario = produto.getPreco();
 		this.produto = produto;
 	}
 
