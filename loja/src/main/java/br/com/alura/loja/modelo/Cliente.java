@@ -1,7 +1,5 @@
 package br.com.alura.loja.modelo;
 
-import java.util.List;
-
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -18,14 +16,11 @@ public class Cliente {
 	private String nome;
 	private String cpf;
 	
-	private List<ItemPedido> produtos;	
-	
 	public Cliente() {
 		
 	}
 
-	public Cliente(String nome, String cpf, List<Pedido> pedidos) {
-		super();
+	public Cliente(String nome, String cpf) {
 		this.nome = nome;
 		this.cpf = cpf;
 	}
@@ -52,6 +47,5 @@ public class Cliente {
 
 	public void setCpf(String cpf) {
 		this.cpf = cpf;
-	}	
-
+	}
 }

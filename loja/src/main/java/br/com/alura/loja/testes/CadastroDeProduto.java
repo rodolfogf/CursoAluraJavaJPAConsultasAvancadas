@@ -49,7 +49,7 @@ public class CadastroDeProduto {
 		categoriaDao.cadastrar(c1);
 		produtoDao.cadastrar(p1);
 		em.getTransaction().commit(); //***
-		em.clear(); //***
+		em.close(); //***
 		
 		//*** essas linhas não seriam escritas em uma aplicação real com uso de algum framework
 	}
